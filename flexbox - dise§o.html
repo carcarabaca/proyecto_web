@@ -2,63 +2,127 @@
 <html lang="en">
 
 <head>
-    <title>NETWORK | Soluciones Móbiles para empresas</title>
+    <title>NETWORK | Soluciones Móviles para empresas</title>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <style>
-        .contenedor{
-            max-width: 80%;
-            margin:1rem auto;
 
-        }
-        header{
-            background: yellow;
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header img {
-            width: 100%;
-            
-        }
-        header a{
-            flex: 0 1 180px;
-        }
-        header nav ul {
-            display: flex;
-            list-style: none;
-            padding:0;
-            margin:0;
-            
-        }
-        header nav ul li a {
-            display: block;
-            background: red;
-            color: white;
-            padding: 1rem;
-            margin:0 .3rem;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-        header nav ul li a:hover {
-            color:black;
-        }
-        .contenido{
-            background: red;
-        }
-        .lateral-1{
-            background: blue;
-        }
-        .lateral-2{
-            background:green;
-        }
-        footer{
-            background: palevioletred;
-        }
+       .contenedor{
+           max-width: 80%;
+           margin: 1rem auto;
+           display: flex;
+           flex-wrap: wrap;
+       }
+       header{
+           background: #cff821;
+           padding: 1rem;
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           flex: 1 1 100%;
+           order:0;
+           
+       }
+       header a {
+           flex: 0 1 180px;
+       }
+       header a img{
+           width: 100%;
+       }
+       header nav ul {
+           list-style: none;
+           padding: 0;
+           margin: 0;
+           display: flex;
+       }
+       header nav ul li a{
+           display: block;
+           background: red;
+           color: #fff;
+           padding: 1rem;
+           margin: 0 .3rem;
+           border-radius: 5px;
+           text-decoration: none;
+       }
+       .contenido{
+           background: #9ce317;
+           flex: 3 1 0px;
+           order:2;
+           padding: 1rem;
+           
+       }
+       .lateral-1{
+           background: #16c1c7;
+           flex: 1 1 0px;
+           order:1;
+           padding: 1rem;
+           
+       }
+       .lateral-2{
+            background: #f50fae;
+           flex: 1 1 0px;
+           order:3;
+           padding: 1rem; 
+       }
+       footer{
+           background: #0F0E0E;
+           color:white;
+           flex: 1 1 100%;
+           text-align: center;
+           order:4;   
+       }
 
+       @media (max-width:1000px){
+           .contenedor{
+               max-width: 90%;
+           }
+       }
+       @media (max-width:850px){
+           header{
+              flex-direction: column;  
+           }
+           header a {
+               flex: 0 1 auto;
+               margin-bottom: 1rem; 
+           }
+       }
+       @media (max-width:700px){
+        
+            .lateral-1,.contenido,.lateral-2{      
+                flex: 1 1 100%;  
+            }
+       }
+       @media (max-width:590px){
+            .contenedor{
+                margin: 0;
+                max-width: 100%;
+            }
+            header{
+                padding: 1rem 0 0 0;
+                justify-content: center;
+                align-items: stretch;
+            }
+            header a.logo{
+                align-self: center;
+                padding: 1rem;
+            }
+            header nav ul {
+                flex-direction: column;
+            }
+            header nav ul li a {
+                margin:0;
+                border-radius: 0;
+                border-bottom: 1px solid white; 
+                text-align: center;
+            }
+
+            
+            
+       }
+      
+      
     </style>
 
 
@@ -68,71 +132,55 @@
 
     <div class="contenedor">
         <header>
-            <a href="#">
+            <a href="#" class='logo'>
                 <img src="images/logo.svg" alt="logo del sitio">
             </a>
             <nav>
                 <ul>
-                    <li><a href="#">Enlace 1</a></li>
-                    <li><a href="#">Enlace 2</a></li>
-                    <li><a href="#">Enlace 3</a></li>
-                    <li><a href="#">Enlace 4</a></li>
-                    <li><a href="#">Enlace 5</a></li>
+                    <li><a href="#">Enlace1</a></li>
+                    <li><a href="#">Enlace2</a></li>
+                    <li><a href="#">Enlace3</a></li>
+                    <li><a href="#">Enlace4</a></li>
+                    <li><a href="#">Enlace5</a></li>
                 </ul>
             </nav>
         </header>
         <article class="contenido">
-            <h1>Contenido principal</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Sint minima laboriosam maiores quasi numquam aliquam perferendis 
-                impedit reprehenderit exercitationem amet nihil praesentium molestias, recusandae fuga rem corrupti. Architecto, neque unde.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Sint minima laboriosam maiores quasi numquam aliquam perferendis 
-                impedit reprehenderit exercitationem amet nihil praesentium molestias, recusandae fuga rem corrupti. Architecto, neque unde.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Sint minima laboriosam maiores quasi numquam aliquam perferendis 
-                impedit reprehenderit exercitationem amet nihil praesentium molestias, recusandae fuga rem corrupti. Architecto, neque unde.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Sint minima laboriosam maiores quasi numquam aliquam perferendis 
-                impedit reprehenderit exercitationem amet nihil praesentium molestias, recusandae fuga rem corrupti. Architecto, neque unde.
-            </p>
+            <h1>CONTENIDO PRINCIPAL</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis voluptate praesentium
+                 ullam facere quasi! Optio rerum, exercitationem debitis, quo expedita soluta deserunt 
+                 libero harum recusandae neque ut accusantium sapiente autem.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis voluptate praesentium
+                ullam facere quasi! Optio rerum, exercitationem debitis, quo expedita soluta deserunt 
+                libero harum recusandae neque ut accusantium sapiente autem.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis voluptate praesentium
+                    ullam facere quasi! Optio rerum, exercitationem debitis, quo expedita soluta deserunt 
+                    libero harum recusandae neque ut accusantium sapiente autem.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis voluptate praesentium
+                ullam facere quasi! Optio rerum, exercitationem debitis, quo expedita soluta deserunt 
+                libero harum recusandae neque ut accusantium sapiente autem.</p>       
         </article>
         <aside class="lateral-1">
-            <h2>Lateral 1</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Sint minima laboriosam maiores quasi numquam aliquam perferendis 
-                impedit reprehenderit exercitationem amet nihil praesentium molestias, recusandae fuga rem corrupti. Architecto, neque unde.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Sint minima laboriosam maiores quasi numquam aliquam perferendis 
-                impedit reprehenderit exercitationem amet nihil praesentium molestias, recusandae fuga rem corrupti. Architecto, neque unde.
-            </p>
+            <h2>LATERAL 1</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis voluptate praesentium
+                    ullam facere quasi! Optio rerum, exercitationem debitis, quo expedita soluta deserunt 
+                    libero harum recusandae neque ut accusantium sapiente autem.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis voluptate praesentium
+                ullam facere quasi! Optio rerum, exercitationem debitis, quo expedita soluta deserunt 
+                libero harum recusandae neque ut accusantium sapiente autem.</p>
         </aside>
         <aside class="lateral-2">
-            <h2>Lateral 2</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.                     Sint minima laboriosam maiores quasi numquam aliquam perferendis 
-                impedit reprehenderit exercitationem amet nihil praesentium molestias, recusandae fuga rem corrupti. Architecto, neque unde.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Sint minima laboriosam maiores quasi numquam aliquam perferendis 
-                impedit reprehenderit exercitationem amet nihil praesentium molestias, recusandae fuga rem corrupti. Architecto, neque unde.
-            </p>
+            <h2>LATERAL 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis voluptate praesentium
+                    ullam facere quasi! Optio rerum, exercitationem debitis, quo expedita soluta deserunt 
+                    libero harum recusandae neque ut accusantium sapiente autem.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis voluptate praesentium
+                ullam facere quasi! Optio rerum, exercitationem debitis, quo expedita soluta deserunt 
+                libero harum recusandae neque ut accusantium sapiente autem.</p>
         </aside>
         <footer>
             <p>Todos los derechos reservados</p>
         </footer>
-
     </div>
 
 </body>
