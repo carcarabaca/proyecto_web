@@ -5,6 +5,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <!-- Cargando fuentes-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700i" rel="stylesheet">
 
@@ -25,19 +29,23 @@
           <a href="index.html" class="logo">
             <img src="images/logo.svg" alt="Logo del sitio">
           </a>
-          <button type="button" class="boton-buscar">
+          <button type="button" class="boton-buscar"
+          data-toggle="collapse" data-target="#bloque-buscar" 
+          aria-expanded="false">
             <i class="fa fa-search" aria-hidden="true"></i>
           </button>
-          <button type="button" class="boton-menu">
+          <button type="button" class="boton-menu" 
+          data-toggle="collapse" data-target="#menu-principal" 
+          aria-expanded="false">
             <i class="fa fa-bars" aria-hidden="true"></i>
           </button>
-          <form action="#" id="bloque-buscar">
+          <form action="#" id="bloque-buscar" class="collapse">
             <div class="contenedor-bloque-buscar">
               <input type="text" placeholder="Buscar ...">
               <input type="submit" value="Buscar">
             </div>
           </form>
-          <nav id="menu-principal">
+          <nav id="menu-principal" class="collapse">
             <ul>
               <li class="active"><a href="index.html">Inicio</a></li>
               <li><a href="nosotros.html">Nosotros</a></li>
@@ -48,14 +56,18 @@
         </div>
       </header>
       
-      <div class="texto-encabezado">
-        <h1>Diseño de APPS para empresas</h1>
-        <p>Creamos aplicaciones según las necesidades y requerimientos de nuestros clientes</p>
-        <a href="contacto.html">Ponte en contacto</a>
+      <div class="texto-encabezado text-center">
+
+        <div class="container">
+          <h1 class="display-4">Diseño de APPS para empresas</h1>
+          <p>Creamos aplicaciones según las necesidades y requerimientos de nuestros clientes</p>
+          <a href="contacto.html" class="btn btn-primary btn-lg">Ponte en contacto</a>
+        </div>
       </div>
 
-      <div class="flecha-bajar">
-        <a href="#agencia">Boton bajar</a>
+
+      <div class="flecha-bajar text-center">
+        <a href="#agencia"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
       </div>
     </section>
 
@@ -131,7 +143,6 @@
     </section>
 
     <!-- Carga de archivos js-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    
   </body>
 </html>
